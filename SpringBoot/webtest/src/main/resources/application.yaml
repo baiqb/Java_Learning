@@ -1,0 +1,18 @@
+server:
+  port: 8081
+test:
+  name: hell world!
+spring:
+  datasource:
+    url: jdbc:mysql://124.221.73.145:3306/yuebao?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false
+    username: yuebao
+    password: r6bFcGwJLx4B2Drp
+    dbcp2:
+      max-conn-lifetime-millis: 30000
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      connection-test-query: SELECT 1
+      connection-timeout: 3000
+      max-lifetime: 30000
+      maximum-pool-size: 5
+      minimum-idle: 3
